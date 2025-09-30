@@ -49,10 +49,10 @@ def temperature_converter():
         unit = input("What is the unit (C or F)? ")
 
 
-        if unit == "C" or unit == "c":
+        if unit.upper() == "C":
             converted = str(celsius_to_fahrenheit(temp))+"°F"
 
-        elif unit == "F" or unit == "f":
+        elif unit.upper() == "F":
             converted = str(fahrenheit_to_celsius(temp))+"°C"
     
         else:

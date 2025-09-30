@@ -14,6 +14,18 @@ def get_numbers_from_user():
     numbers = []
 
     while True:
+        try:
+            number = input("Insert a number or write 'done' when finished: ")
+            
+            if number.upper() == "DONE":
+                break
+            else:
+                float(number)
+
+
+        except ValueError:
+            print("That is not valid. Try again.")
+
         # TODO: Get input from user
         # TODO: Check if user typed 'done'
         # TODO: Try to convert to float and add to list
