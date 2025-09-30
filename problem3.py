@@ -20,7 +20,8 @@ def get_numbers_from_user():
             if number.upper() == "DONE":
                 break
             else:
-                float(number)
+                number = float(number)
+                numbers.append(number)
 
 
         except ValueError:
@@ -36,6 +37,7 @@ def get_numbers_from_user():
 
 
 def analyze_numbers(numbers):
+
     """
     Analyze the list and return a dictionary with:
     - count: number of elements
@@ -52,6 +54,36 @@ def analyze_numbers(numbers):
     Returns:
         dict: Dictionary with analysis results, or None if list is empty
     """
+    
+
+    count = len(numbers)
+
+    addition = 0
+    for i in numbers:
+        addition += i
+
+    average = addition/count
+
+    minimum = min(numbers)
+
+    maximum = max(numbers)
+
+    even = []
+    odd = []
+    
+    for i in numbers:
+        if i%2 == 0:
+            even.append(i)
+        else:
+            odd.append(i)
+
+    count_even = len(even)
+
+    count_odd = len(odd)
+
+
+    return count, addition, average, minimum, maximum, count_even, count_odd
+
     if not numbers:
         return None
 
