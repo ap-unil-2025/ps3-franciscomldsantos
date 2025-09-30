@@ -54,52 +54,49 @@ def analyze_numbers(numbers):
     Returns:
         dict: Dictionary with analysis results, or None if list is empty
     """
-    
-
-    count = len(numbers)
-
-    addition = 0
-    for i in numbers:
-        addition += i
-
-    average = addition/count
-
-    minimum = min(numbers)
-
-    maximum = max(numbers)
-
-    even = []
-    odd = []
-    
-    for i in numbers:
-        if i%2 == 0:
-            even.append(i)
-        else:
-            odd.append(i)
-
-    count_even = len(even)
-
-    count_odd = len(odd)
-
-
-    return count, addition, average, minimum, maximum, count_even, count_odd
-
     if not numbers:
         return None
 
-    analysis = {}
+    else:
 
-    # TODO: Calculate count
-    # TODO: Calculate sum
-    # TODO: Calculate average
-    # TODO: Find minimum
-    # TODO: Find maximum
-    # TODO: Count even numbers (hint: use modulo operator)
-    # TODO: Count odd numbers
+        count = len(numbers)
 
-    return analysis
+        addition = 0
+        for i in numbers:
+            addition += i
 
+        average = addition/count
 
+        minimum = min(numbers)
+
+        maximum = max(numbers)
+
+        even = []
+        odd = []
+        
+        for i in numbers:
+            if i%2 == 0:
+                even.append(i)
+            else:
+                odd.append(i)
+
+        count_even = len(even)
+
+        count_odd = len(odd)
+
+        analysis = {"count":count, "sum":addition, "average":average, "minimum":minimum, "maximum":maximum, "even_count":count_even, "odd_count":count_odd}
+
+        # TODO: Calculate count
+        # TODO: Calculate sum
+        # TODO: Calculate average
+        # TODO: Find minimum
+        # TODO: Find maximum
+        # TODO: Count even numbers (hint: use modulo operator)
+        # TODO: Count odd numbers
+
+        return analysis
+
+analysis = {'count': 5, 'sum': 28, 'average': 5.6, 'minimum': 0, 'maximum': 10, 'even_count': 3, 'odd_count': 2}
 def display_analysis(analysis):
     """
     Display the analysis in a formatted way.
@@ -108,7 +105,7 @@ def display_analysis(analysis):
         analysis (dict): Dictionary containing analysis results
     """
     if not analysis:
-        return
+        return 
 
     print("\nAnalysis Results:")
     print("-" * 20)
@@ -119,7 +116,9 @@ def display_analysis(analysis):
     # Sum: 25
     # Average: 5.00
     # etc.
-    pass
+
+    print(f"Count: {analysis["count"]}\nSum: {analysis["sum"]}\nAverage: {analysis["average"]}\nMinimum: {analysis["minimum"]}\nMaximum: {analysis["maximum"]}\nEven_count: {analysis["even_count"]}\nOdd_count: {analysis["odd_count"]}")
+    
 
 
 def main():
