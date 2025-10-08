@@ -65,7 +65,6 @@ def count_lines(filename):
 def count_characters(filename, include_spaces=True):
     with open(filename, "r") as f:
         text = f.read().replace("\n","")
-        print(text)
     count = 0
     for i in text:
         count += 1
@@ -123,7 +122,8 @@ def word_frequency(filename):
         text = f.read().split()
     words = []
     for i in text:
-        word = i.lower().translate(str.maketrans("", "", string.punctuation))
+        j = i.replace("'s","")
+        word = j.lower().translate(str.maketrans("", "", string.punctuation))
         words.append(word)
     frequency = {}
     for i in words:

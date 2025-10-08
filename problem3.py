@@ -16,7 +16,7 @@ def get_numbers_from_user():
     while True:
         try:
             number = input("Insert a number or write 'done' when finished: ")
-            
+                       
             if number.upper() == "DONE":
                 break
             else:
@@ -33,7 +33,7 @@ def get_numbers_from_user():
         # TODO: Handle invalid input gracefully
         pass
 
-    return numbers
+    return numbers 
 
 
 def analyze_numbers(numbers):
@@ -117,7 +117,7 @@ def display_analysis(analysis):
     # Average: 5.00
     # etc.
 
-    print(f"Count: {analysis["count"]}\nSum: {analysis["sum"]}\nAverage: {analysis["average"]}\nMinimum: {analysis["minimum"]}\nMaximum: {analysis["maximum"]}\nEven_count: {analysis["even_count"]}\nOdd_count: {analysis["odd_count"]}")
+    print(f"Count: {analysis["count"]}\nSum: {analysis["sum"]}\nAverage: {analysis["average"]}\nMinimum: {analysis["minimum"]}\nMaximum: {analysis["maximum"]}\nEven Numbers: {analysis["even_count"]}\nOdd Numbers: {analysis["odd_count"]}")
     
 
 
