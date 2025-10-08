@@ -23,16 +23,41 @@ def generate_password(length=12, use_uppercase=True, use_lowercase=True,
         str: Generated password
     """
     characters = ""
+    password = []
+    if use_lowercase:
+        characters += string.ascii_lowercase
+        required = random.choice(string.ascii_lowercase)
+        password.append(required)
+        length = length - 1
+    if use_uppercase:
+        characters += string.ascii_uppercase
+        required = random.choice(string.ascii_uppercase)
+        password.append(required)
+        length = length - 1
+    if use_digits:
+        characters += string.digits
+        required = random.choice(string.digits)
+        password.append(required)
+        length = length - 1
+    if use_special:
+        characters += string.punctuation
+        required = random.choice(string.punctuation)
+        password.append(required)      
+        length = length - 1
+
+    if not characters:
+        return "Error: No character types selected!"
+    else:
+        for i in range(0,length):
+                random_char = random.choice(characters)
+                password.append(random_char)
+                random.shuffle(password)
+    return ''.join(password)
 
     # TODO: Build character set based on parameters
     # if use_lowercase:
     #     characters += string.ascii_lowercase
     # etc.
-
-    if not characters:
-        return "Error: No character types selected!"
-
-    password = []
 
     # TODO: Ensure at least one character from each selected type
     # This prevents passwords that don't meet the criteria
@@ -40,8 +65,6 @@ def generate_password(length=12, use_uppercase=True, use_lowercase=True,
     # TODO: Fill the rest of the password randomly
 
     # TODO: Shuffle the password list to randomize order
-
-    return ''.join(password)
 
 
 def password_strength(password):
@@ -55,7 +78,27 @@ def password_strength(password):
         str: Strength rating
     """
     score = 0
-
+    if len(password) >= 8:
+        score += 1
+    if len(password) >= 12:
+        score += 1
+    for i in string.ascii_lowercase:
+        if i in password:
+            has_lower = 1
+    for i in string.ascii_uppercase:
+        if i in password:
+            has_upper = 1
+    for i in string.digits:
+        if i in password:
+            has_digits = 1
+    if has_lower == 1:
+        score += 1
+    if has_upper == 1:
+        score += 1
+    if has_digits == 1:
+        score += 1
+    strength = ["Very Weak", "Weak", "Fair", "Good", "Strong", "Very Strong"]
+    return strength[min(score, 5)]
     # TODO: Add points for different criteria
     # - Length >= 8: +1 point
     # - Length >= 12: +1 point
@@ -63,8 +106,7 @@ def password_strength(password):
     # - Contains uppercase: +1 point
     # - Contains digits: +1 point
 
-    strength = ["Very Weak", "Weak", "Fair", "Good", "Strong", "Very Strong"]
-    return strength[min(score, 5)]
+    
 
 
 def main():
