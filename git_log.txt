@@ -1,6 +1,83 @@
-b28ad6b Personalize hello message
-c497ead Add hello_git.py
-9391175 Initial commit: Add README
-a8de901 Add git history
-7bcb689 Add GitHub Classroom autograding configuration
-2dc2daa Initial commit
+commit 1b2334fa6e6b1d05d161fcedf6d05e1abd0757f5
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Wed Oct 8 11:28:32 2025 +0000
+
+    "Final Push I hope"
+
+commit 174d1221c7d8e2fc63724df5d0978610bc42b370
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Wed Oct 8 11:12:55 2025 +0000
+
+    Bonus problem completed
+
+commit f30c656590cfe0de3822bce7ddc6b5effdec7b50
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Mon Oct 6 10:18:18 2025 +0000
+
+    Problem4 with errors
+
+commit c7350760a13003c62c11c4399047467518c23322
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Tue Sep 30 16:29:19 2025 +0000
+
+    Problem3 done
+
+commit 09365c9a7a3b4fff761d0368766dd118382d9fb8
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Tue Sep 30 13:49:42 2025 +0000
+
+    First function done, working in second
+
+commit 778430edc213eb6a550024fb2b2949d79db799a3
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Tue Sep 30 13:14:09 2025 +0000
+
+    "Multiple Changes"
+
+commit 587a223d846fd9534f1b08e08d58080ec49da202
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Tue Sep 30 12:37:06 2025 +0000
+
+    Problem2 fully completed
+
+commit 9dfebc5b87c58c070b799642503822b1c0d71626
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Mon Sep 29 13:48:49 2025 +0000
+
+    Add git history
+
+commit b28ad6b787186deb73bb8b361df7519af86e02d4
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Mon Sep 29 13:48:14 2025 +0000
+
+    Personalize hello message
+
+commit c497eada235db5d664366d68b9cf0f3856d5fe08
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Mon Sep 29 13:46:09 2025 +0000
+
+    Add hello_git.py
+
+commit 93911758af316585a05e70a292d0adf068bea7ec
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Mon Sep 29 13:43:04 2025 +0000
+
+    Initial commit: Add README
+
+commit a8de9017a16e4085f7ce20931aa48f5adfe09c85
+Author: Francisco Manuel Lameiras dos Santos <francisco.lameirasdossantos@unil.ch>
+Date:   Mon Sep 29 13:30:04 2025 +0000
+
+    Add git history
+
+commit 7bcb689e6ec93cc64526a8c7be6547d031f5ef09
+Author: Anna Smirnova <anna.smirnova@unil.ch>
+Date:   Mon Sep 29 14:44:57 2025 +0200
+
+    Add GitHub Classroom autograding configuration
+
+commit 2dc2daa38eab9338834bf27a431ee90c92a89e2c
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Mon Sep 29 11:49:46 2025 +0000
+
+    Initial commit
