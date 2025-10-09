@@ -19,9 +19,6 @@ Many companies use Python for their projects."""
         f.write(content)
     print(f"Created {filename}")
 
-with open("sample.txt", "r") as f:
-    f.read()
-
 def count_words(filename):
     with open(filename, "r") as f:
         text = f.read().split()
