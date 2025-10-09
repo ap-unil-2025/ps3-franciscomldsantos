@@ -88,14 +88,15 @@ def count_characters(filename, include_spaces=True):
 def find_longest_word(filename):
     import string
     with open(filename, "r") as f:
-        text = f.read().split()
+        text = f.read()
+        for i in string.punctuation:
+            text = text.replace(i,"")
+        text = text.split()
     size = 0
     longest_word = ""  
-    for i in text:
-        i = i.translate(str.maketrans("", "", string.punctuation))
-        if len(i) > size:
-            longest_word = i
-            size = len(i)    
+    if len(i) > size:
+        longest_word = i
+        size = len(i)    
     return longest_word
     """
     Find and return the longest word in the file.
